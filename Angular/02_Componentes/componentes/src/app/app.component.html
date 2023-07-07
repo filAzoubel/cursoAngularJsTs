@@ -1,0 +1,21 @@
+<section>
+
+  <h1>Básico</h1>
+  
+  <h2>{{ title }}</h2>
+  <app-title></app-title>
+
+</section>
+
+<section>
+  <h1>Ciclo de Vida</h1>
+  <app-texto texto="Fui modificado!"></app-texto>
+  <app-texto texto="Fui modificado novamente!"></app-texto>
+  <app-texto *ngIf="destruir" texto="Fui modificado 3x!"></app-texto>
+  <app-texto texto="{{ valor }}"></app-texto>
+  <button (click)="add()">Adiciona</button>
+  <button (click)="destroy()">Destruir componente</button>
+</section>
+
+
+<router-outlet></router-outlet>
